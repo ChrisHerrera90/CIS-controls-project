@@ -30,9 +30,40 @@ This project contains anonymized configurations and data for demonstration purpo
 
 ### 📋 CIS Control 1: Inventory and Control of Assets
 
-This control is about maintaining an up-to-date inventory of all the business' GoHighLevel sub-accounts, domains, websites, and client-facing assets to reduce shadow IT and manage exposure. These are the steps I took to implement this control:
+This control is about maintaining an up-to-date inventory of all the business' GoHighLevel sub-accounts, domains, websites, and client-facing assets to reduce shadow IT and manage attack surface exposure. These are the steps I took to implement this control:
 
-[Draft Policy](https://docs.google.com/document/d/1CLSWm1_9JL1oUqgyNNwtPXW6FzXJ7ddVnSAUQTyqC8I/edit?usp=drive_link)
+In order to identify all critical assets for inventory, I went through the following areas of the business GoHighLevel dashboard:
+- Contacts (email list and leads)
+- Payments (customer transaction history, invoice templates and contracts)
+- Sites (includes websites, funnels, and form templates)
+- Marketing (includes email templates)
+- Memberships (community platform for customers)
+- Media Storage (includes client PDFs, website images, event documents, audio recordings)
+
+
+
+
+The file below contains a structured inventory of all business-critical assets inside the GoHighLevel platform to support visibility, risk reduction, and secure configuration practices.
+
+## 📋 Asset Inventory Table
+
+| Asset Type      | Name/Label              | Purpose                            | Owner       | Status     | Notes                                
+|------------------|--------------------------|-------------------------------------|-------------|------------|--------------------------------
+| Elite360 Account | Main Business Account    | Website + Funnel + CRM for Business | Admin User | Active    | MFA enabled        
+| Domain           | www.client1.com          | Public-facing website              | Admin User  | Active     | SSL enabled                     
+| Funnel           | LeadGen_VSL              | Lead generation funnel             | Marketer    | Active     | Reviewed 2025-04-15             
+| Calendar         | Sales_Call_Booking       | Client sales calls                 | Sales Rep   | Active     | Public link secured             
+| Integration      | Stripe                   | Payment processing                 | Admin User  | Active     | API key rotated quarterly       
+| Integration      | Zapier (GDrive export)   | Automation for backups             | Ops Team    | Active     | Sends to encrypted Google Drive 
+| User Account     | john.doe@domain.com      | Sales Rep                          | Admin       | Active     | Least privilege confirmed       
+| Form             | Application_Form_01      | Onboarding intake form             | Ops Team    | Active     | PII sanitized, reCAPTCHAenable  
+| Workflow         | Lead_to_CRM_Automation   | Captures leads and assigns owner   | Marketer    | Active     | Logs reviewed                   
+| File Upload      | Funnel_PDF_Offer.pdf     | Downloadable asset on funnel       | Designer    | Active     | No sensitive data
+
+
+## ✅ Review Schedule
+Asset inventory is reviewed monthly during our security operations check-in and updated after any major launch or integration change.
+
 
 ---
 
