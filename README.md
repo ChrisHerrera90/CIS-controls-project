@@ -8,8 +8,6 @@ This project contains anonymized configurations and data for demonstration purpo
 
 ---
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/cfc5dbcf-3fcb-4a71-9c13-2a49f8bab3e6">
-
 # Technology Utilized
 - GoHighLevel (Elite360)
 
