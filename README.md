@@ -18,8 +18,8 @@ This project contains anonymized configurations and data for demonstration purpo
 
 # Table of Contents
 
-- [CIS Control 1: Inventory and Control of Assets](#vulnerability-management-policy-draft-creation)
-- [CIS Control 2: Inventory and Control of Software Assets)](#step-2-mock-meeting-policy-buy-in-stakeholders)
+- [CIS Control 1: Inventory and Control of Assets](#cis-control-1-inventory-and-control-of-assets)
+- [CIS Control 2: Inventory and Control of Software Assets](#step-2-mock-meeting-policy-buy-in-stakeholders)
 - [CIS Control 4: Secure Configuration of Enterprise Assets and Software](#step-3-policy-finalization-and-senior-leadership-sign-off)
 - [CIS Control 5: Account Management](#step-4-mock-meeting-initial-scan-permission-server-team)
 - [CIS Control 8: Audit Log Management](#step-5-initial-scan-of-server-team-assets)
