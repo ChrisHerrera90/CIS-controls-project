@@ -1,9 +1,8 @@
 # CIS Controls Version 8.1 Implementation Project for a SaaS Based Online Business
 This is a project walkthrough of a complete CIS Controls implementation that I designed for a real small-sized business built on the GoHighLevel Platform (Elite360)
 
-_**Inception State:**_ the organization has no existing policy or vulnerability management practices in place.
+**Note:** Due to the fact that this business built all of their digital assets on a SaaS platform, not all CIS controls will be applicable for this project since I do not have access to GoHighLevel/Elite360 IT infrastructure. Therefore, the CIS Controls Framework has been adapted for SaaS usage instead of infrastructure hardening.
 
-_**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secured, and a full cycle of organization-wide vulnerability remediation is successfully completed.
 
 ---
 
