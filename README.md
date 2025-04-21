@@ -46,7 +46,7 @@ In order to identify all critical assets for inventory, I went through the follo
 
 The file below contains a sample structured inventory of all business-critical assets inside the GoHighLevel platform to support visibility, risk reduction, and secure configuration practices. To protect the privacy of the business, and to simplify the inventory for demonstration purposes, I have anonymized and condensed many of the items.
 
-## 📋 Asset Inventory Table
+📋 Asset Inventory Table
 
 | Asset Type      | Name/Label              | Purpose                            | Owner       | Status     | Notes                                
 |------------------|--------------------------|-------------------------------------|-------------|------------|--------------------------------
