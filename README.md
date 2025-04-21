@@ -75,7 +75,8 @@ The file below contains a sample structured inventory of all business-critical a
 | Workflow 4        | New contact form        | Alerts staff of new contact form submission  | Marketing Team   | Active    | Logs reviewed
 | 40 Forms          | Questionnaires | Onboarding intake forms for events/sessions | Admin User  | Active  | PII sanitized, reCAPTCHAenable
 
-## ✅ Review Schedule
+
+✅ Review Schedule
 Asset inventory is reviewed monthly during our security operations check-in and updated after any major launch or integration change.
 
 
@@ -83,7 +84,23 @@ Asset inventory is reviewed monthly during our security operations check-in and 
 
 ### 📋 CIS Control 2: Inventory and Control of Software Assets
 
-In this control, we track and periodically review all third-party integrations, webhooks, and connected apps to eliminate unauthorized or unused services. These are the steps I took to implement this control:
+In this control, we track and periodically review all third-party integrations, webhooks, and connected apps to eliminate unauthorized or unused services. The following table lists all third-party software, services, and integrations that interact with our GoHighLevel account to maintain visibility, control, and reduce risk from unauthorized or outdated applications.
+
+🔌 Software Asset Inventory
+
+| Software / Integration | Purpose                          | Data Accessed              | Owner              | Status     | Notes                                    |
+|------------------------|----------------------------------|----------------------------|--------------------|------------|-------------------------------------------|
+| Zoom                   | Hosts webinar based events       | Contact data, form entries | Operations Manager | Active     | Limited scope, API key stored securely    |
+| Paypal                 | Payment processing               | Customer payment details   | Admin              | Active     | PCI-DSS compliant, 2FA enabled            |
+| EventsCalendar.io      | Calendar of Event offerings      | Calendar events, funnels   | Marketing Team     | Active     | OAuth-based access                        |
+| Mailgun / SMTP         | Email Marketing delivery         | Emails, lead names         | Marketing Team     | Active     | DKIM/SPF configured                       |
+| Proton Mail            | Internal Staff Communication     | Emails, various client PII | Admin              | Active     | DKIM/SPF configured                       |
+| Tettra                 | Internal staff documentaton      | SOPs                       | Admin              | Active     | 2fa enabled                   |
+
+✅ Review Schedule
+
+All integrations and software connections are reviewed quarterly and after any major platform change. Inactive or high-risk connections are removed or replaced immediately.
+
 
 ---
 
