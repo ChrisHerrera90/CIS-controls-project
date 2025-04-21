@@ -28,63 +28,51 @@ This project contains anonymized configurations and data for demonstration purpo
 
 ---
 
-### CIS Control 1: Inventory and Control of Assets
+### 📋 CIS Control 1: Inventory and Control of Assets
 
-This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.  
+This control is about maintaining an up-to-date inventory of all the business' GoHighLevel sub-accounts, domains, websites, and client-facing assets to reduce shadow IT and manage exposure. These are the steps I took to implement this control:
+
 [Draft Policy](https://docs.google.com/document/d/1CLSWm1_9JL1oUqgyNNwtPXW6FzXJ7ddVnSAUQTyqC8I/edit?usp=drive_link)
 
 ---
 
-### CIS Control 2: Inventory and Control of Software Assets
+### 📋 CIS Control 2: Inventory and Control of Software Assets
 
-In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
-
----
-
-### CIS Control 4: Secure Configuration of Enterprise Assets and Software
-
-After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
-[Finalized Policy](https://docs.google.com/document/d/1rvueLX_71pOR8ldN9zVW9r_zLzDQxVsnSUtNar8ftdg/edit?usp=drive_link)
-
+In this control, we track and periodically review all third-party integrations, webhooks, and connected apps to eliminate unauthorized or unused services. These are the steps I took to implement this control:
 
 ---
 
-### CIS Control 5: Account Management
+### ⚙️ CIS Control 4: Secure Configuration of Enterprise Assets and Software
 
-The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
+This control focuses on applying secure-by-default configurations within the GoHighLevel platform by disabling unused features, tightening permissions, and removing default assets. These are the steps I took to implement this control:
+
 
 ---
 
-### CIS Control 8: Audit Log Management
+### 👨‍💻 CIS Control 5: Account Management
 
-In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  
-
-![image](https://github.com/user-attachments/assets/48f7768f-13f8-458f-9f8c-41886431bca1)
-
-[Scan 1 - Initial Scan PDF](https://drive.google.com/file/d/1RBPVj_azKJMwmRZ8QILlb4hxIjQU3wQ7/view?usp=drive_link)
+This control focuses on implementing individual user accounts, enforce least-privilege access, and conduct regular reviews to remove inactive or unnecessary users. These are the steps I took to implement this control:
 
 ---
 
-### CIS Control 10: Malware Defenses
+### 🪪 CIS Control 8: Audit Log Management
 
-We assessed vulnerabilities and established a remediation prioritization strategy based on ease of remediation and impact. The following priorities were set:
-
-1. Third Party Software Removal (Firefox)
-2. Windows OS Secure Configuration (SMBv1 Disable)
-3. Windows OS Secure Configuration (Protocols & Ciphers)
-4. Windows OS Updates
+This controls focuses on exporting and reviewing available activity logs to track account changes, user access, and lead/customer data movement across the platform. These are the steps I took to implement this control:
 
 ---
 
-### CIS Control 14: Security Awareness and Skills Training
+### 🛡️ CIS Control 10: Malware Defenses
 
-The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
+This control focuses on training staff to recognize suspicious messages or uploads and ensure only vetted files and assets are shared or received via the GoHighLevel-Elite360 platform. These are the steps I took to implement this control:
 
-![image](https://github.com/user-attachments/assets/66ae7a83-55ca-4597-8070-aee18eb33d13)
-
-
-[Remediation Email](https://github.com/joshmadakor1/lognpacific-public/blob/main/misc/remediation-email.md)
 
 ---
 
-By implementing CIS Controls, organizations can stay ahead of emerging threats and ensure long-term security resilience.
+### 👀 CIS Control 14: Security Awareness and Skills Training
+
+This control focuses on educating the team members on secure CRM usage, PII handling, phishing recognition, and enforce security policies for account and communication hygiene. For this control, I created a training manual on best security practices that team members can study and reference:
+
+
+---
+
+By implementing these CIS Controls, this organization can stay ahead of emerging threats and ensure long-term security resilience.
