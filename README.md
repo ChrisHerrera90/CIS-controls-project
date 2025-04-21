@@ -40,7 +40,7 @@ In order to identify all critical assets for inventory, I went through the follo
 - Memberships (community platform for customers)
 - Media Storage (includes client PDFs, website images, event documents, audio recordings)
 
-
+![image](https://github.com/user-attachments/assets/3e92bc0f-a605-4447-90c4-ec9141fa3b67)
 
 
 The file below contains a structured inventory of all business-critical assets inside the GoHighLevel platform to support visibility, risk reduction, and secure configuration practices.
