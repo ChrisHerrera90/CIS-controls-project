@@ -39,27 +39,41 @@ In order to identify all critical assets for inventory, I went through the follo
 - Marketing (includes email templates)
 - Memberships (community platform for customers)
 - Media Storage (includes client PDFs, website images, event documents, audio recordings)
+- Settings (domain settings, encryption and security)
 
 ![image](https://github.com/user-attachments/assets/3e92bc0f-a605-4447-90c4-ec9141fa3b67)
 
 
-The file below contains a structured inventory of all business-critical assets inside the GoHighLevel platform to support visibility, risk reduction, and secure configuration practices.
+The file below contains a sample structured inventory of all business-critical assets inside the GoHighLevel platform to support visibility, risk reduction, and secure configuration practices. To protect the privacy of the business, and to simplify the inventory for demonstration purposes, I have anonymized and condensed many of the items.
 
 ## 📋 Asset Inventory Table
 
 | Asset Type      | Name/Label              | Purpose                            | Owner       | Status     | Notes                                
 |------------------|--------------------------|-------------------------------------|-------------|------------|--------------------------------
-| Elite360 Account | Main Business Account    | Website + Funnel + CRM for Business | Admin User | Active    | MFA enabled        
-| Domain           | www.client1.com          | Public-facing website              | Admin User  | Active     | SSL enabled                     
-| Funnel           | LeadGen_VSL              | Lead generation funnel             | Marketer    | Active     | Reviewed 2025-04-15             
-| Calendar         | Sales_Call_Booking       | Client sales calls                 | Sales Rep   | Active     | Public link secured             
-| Integration      | Stripe                   | Payment processing                 | Admin User  | Active     | API key rotated quarterly       
-| Integration      | Zapier (GDrive export)   | Automation for backups             | Ops Team    | Active     | Sends to encrypted Google Drive 
-| User Account     | john.doe@domain.com      | Sales Rep                          | Admin       | Active     | Least privilege confirmed       
-| Form             | Application_Form_01      | Onboarding intake form             | Ops Team    | Active     | PII sanitized, reCAPTCHAenable  
-| Workflow         | Lead_to_CRM_Automation   | Captures leads and assigns owner   | Marketer    | Active     | Logs reviewed                   
-| File Upload      | Funnel_PDF_Offer.pdf     | Downloadable asset on funnel       | Designer    | Active     | No sensitive data
-
+| Elite360 Account | Main Business Account    | Website + Funnel + CRM for Business | Admin User      | Active  | MFA enabled        
+| Domain           | www.client1.com          | Public-facing website              | Admin User       | Active  | SSL enabled      
+| 17 Funnels       | Event Add Ons            | Upsell funnels                     | Marketing Team   | Active  | Reviewed 2025-04-17         
+| 2 Funnels        | Consultations            | 1 on 1 Coaching sales              | Marketing Team   | Active  | Reviewed 2025-04-17
+| 10 Funnels       | Distant Sessions         | Online Group Coaching sales        | Marketing Team   | Active  | Reviewed 2025-04-17 
+| 9 Funnels        | 2 Day Online Events      | Coaching Event Sales               | Marketing Team   | Active  | Reviewed 2025-04-18 
+| 2 Funnels        | In Person Coaching Sessions  | 1 on 1 Coaching sales          | Marketing Team   | Active  | Reviewed 2025-04-18 
+| 2 Funnels        | Consultations            | 1 on 1 Coaching sales              | Marketing Team   | Active  | Reviewed 2025-04-18 
+| 14 Email Templates | Email Templates        | Marketing Campaigns                | Marketing Team   | Active  | Reviewed 2025-04-21 
+| Lead List        | Email List               | Marketing Campaigns                | Marketing Team   | Active  | Reviewed 2025-04-21 
+| Transaction History | Payment history       | Accounting                         | Admin User       | Active  | PCI compliant
+| 32 File Uploads  | PDF files for funnels    | Downloadable assets on funnel      | Admin User       | Active  | No sensitive data
+| 67 Image Uploads | PNG files                | Images for website/funnels         | Admin User       | Active  | No sensitive data
+| Coomunity Portal | Membership Community     | Community Portal for VIP Members   | Admin User       | Active  | No sensitive data
+| User Account     | john.doe@domain.com      | Owner/Founder                      | Admin (Owner)    | Active  | Least privilege confirmed
+| User Account     | john.doe@domain.com      | Operations Manager                 | Admin            | Active  | Least privilege confirmed
+| User Account     | john.doe@domain.com      | Sales Rep                          | User             | Active  | Least privilege confirmed
+| User Account     | john.doe@domain.com      | Marketing Manager                  | User             | Active  | Least privilege confirmed
+| User Account     | john.doe@domain.com      | Client Success Manager             | User             | Active  | Least privilege confirmed
+| Workflow 1        | Onboarding Automation   | Event Registrees are sent to onboarding page | Marketing Team   | Active    | Logs reviewed
+| Workflow 2        | Add to email list       | Newsletter opt in joins email list           | Marketing Team   | Active    | Logs reviewed
+| Workflow 3        | New purchases           | Alerts staff of new purchase/registration    | Marketing Team   | Active    | Logs reviewed
+| Workflow 4        | New contact form        | Alerts staff of new contact form submission  | Marketing Team   | Active    | Logs reviewed
+| 40 Forms          | Questionnaires | Onboarding intake forms for events/sessions | Admin User  | Active  | PII sanitized, reCAPTCHAenable
 
 ## ✅ Review Schedule
 Asset inventory is reviewed monthly during our security operations check-in and updated after any major launch or integration change.
