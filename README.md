@@ -18,20 +18,13 @@ This is a project walkthrough of a complete CIS Controls implementation that I d
 
 # Table of Contents
 
-- [Vulnerability Management Policy Draft Creation](#vulnerability-management-policy-draft-creation)
-- [Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
-- [Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
-- [Mock Meeting: Initial Scan Permission (Server Team)](#step-4-mock-meeting-initial-scan-permission-server-team)
-- [Initial Scan of Server Team Assets](#step-5-initial-scan-of-server-team-assets)
-- [Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
-- [Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
-- [Mock Meeting: Post-Initial Discovery Scan (Server Team)](#step-8-mock-meeting-post-initial-discovery-scan-server-team)
-- [Mock CAB Meeting: Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
-- [Remediation Round 1: Outdated Firefox Removal](#remediation-round-1-outdated-wireshark-removal)
-- [Remediation Round 2: Disabling SMBv1 Vulnerability](#remediation-round-2-insecure-protocols--ciphers)
-- [Remediation Round 3: Insecure Protocols & Ciphers](#remediation-round-3-guest-account-group-membership)
-- [Remediation Round 4: Windows OS Updates](#remediation-round-4-windows-os-updates)
-- [First Cycle Remediation Effort Summary](#first-cycle-remediation-effort-summary)
+- [CIS Control 1: Inventory and Control of Assets](#vulnerability-management-policy-draft-creation)
+- [CIS Control 2: Inventory and Control of Software Assets)](#step-2-mock-meeting-policy-buy-in-stakeholders)
+- [CIS Control 4: Secure Configuration of Enterprise Assets and Software](#step-3-policy-finalization-and-senior-leadership-sign-off)
+- [CIS Control 5: Account Management](#step-4-mock-meeting-initial-scan-permission-server-team)
+- [CIS Control 8: Audit Log Management](#step-5-initial-scan-of-server-team-assets)
+- [CIS Control 10: Malware Defenses](#step-6-vulnerability-assessment-and-prioritization)
+- [CIS Control 14: Security Awareness and Skills Training](#step-7-distributing-remediations-to-remediation-teams)
 
 ---
 
