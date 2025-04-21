@@ -3,7 +3,7 @@ This is a project walkthrough of a complete CIS Controls implementation that I d
 
 In this project, I performed an audit of an online coaching business utilizing the CIS Controls Version 8.1 framework. Once I completed the audit, I then provided steps for remediation in order tp make this business compliant based on these controls.
 
-**Note:** Due to the fact that this business built all of their digital assets on a SaaS platform, not all CIS controls will be applicable for this project since I do not have access to GoHighLevel/Elite360 IT infrastructure. Therefore, the CIS Controls Framework has been adapted for SaaS usage instead of infrastructure hardening. 
+**Note:** Due to the fact that this business built all of their digital assets on a SaaS platform, not all CIS controls will be applicable for this project since I do not have access to the GoHighLevel/Elite360 IT infrastructure. Therefore, the CIS Controls Framework has been adapted for SaaS usage instead of infrastructure hardening. 
 
 ## 🔒 Security Disclosure
 This project contains anonymized configurations and data for demonstration purposes only. No real customer, business, or platform credentials are included in this repository.
