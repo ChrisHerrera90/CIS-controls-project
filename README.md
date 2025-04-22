@@ -97,7 +97,7 @@ In this control, we track and periodically review all third-party integrations, 
 | Proton Mail            | Internal Staff Communication     | Emails, various client PII | Admin              | Active     | DKIM/SPF configured                       |
 | Tettra                 | Internal staff documentaton      | SOPs                       | Admin              | Active     | 2fa enabled                   |
 
-✅ Review Schedule
+✅ Review Schedule:
 
 All integrations and software connections are reviewed quarterly and after any major platform change. Inactive or high-risk connections are removed or replaced immediately.
 
@@ -171,10 +171,15 @@ In addition, more granular permission controls where implemented for each accoun
 
 ### 🪪 CIS Control 8: Audit Log Management
 
-This controls focuses on exporting and reviewing available activity logs to track account changes, user access, and lead/customer data movement across the platform. These are the steps I took to implement this control:
+This control focuses on exporting and reviewing available activity logs to track account changes, user access, and lead/customer data movement across the platform. These are the steps I took to implement this control:
 
+Due to being limited to GoHighLevels' features, the only source of activity logs is their "Audit Logs" menu in the dashboard:
 
+![image](https://github.com/user-attachments/assets/3ab3ac26-f18c-4915-b57d-3d3b9e8c2a2f)
 
+📜 Log Database Storage
+
+These logs provided a record of actions that each user account has made in the platform. Since logs are only stored for 60 days in the platform, I advised the business to export the platform's user activity logs every 30 days. They can then store this data into their encrypted Dropbox Business account.
 
 ---
 
