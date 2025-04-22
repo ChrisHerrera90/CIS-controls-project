@@ -1,7 +1,7 @@
 # CIS Controls Version 8.1 Implementation Project for a SaaS Based Online Business
 This is a project walkthrough of a complete CIS Controls implementation that I designed for a real small-sized business (business name redacted for privacy) built on the GoHighLevel Platform (Elite360). 
 
-In this project, I performed an audit of an online coaching business utilizing the CIS Controls Version 8.1 framework. Once I completed the audit, I then provided steps for remediation in order tp make this business compliant based on these controls.
+In this project, I performed an audit of an online coaching business utilizing the CIS Controls Version 8.1 framework. Once I completed the audit, I then provided steps for remediation in order to make this business compliant based on these controls.
 
 **Note:** Due to the fact that this business built all of their digital assets on a SaaS platform, not all CIS controls will be applicable for this project since I do not have access to the GoHighLevel/Elite360 IT infrastructure. Therefore, the CIS Controls Framework has been adapted for SaaS usage instead of infrastructure hardening. 
 
@@ -106,8 +106,26 @@ All integrations and software connections are reviewed quarterly and after any m
 
 ### ⚙️ CIS Control 4: Secure Configuration of Enterprise Assets and Software
 
-This control focuses on applying secure-by-default configurations within the GoHighLevel platform by disabling unused features, tightening permissions, and removing default assets. These are the steps I took to implement this control:
+This control focuses on applying secure-by-default configurations within the GoHighLevel platform by disabling unused features, securing integrations, and removing default assets. These are the steps I took to implement this control:
 
+🌐 Funnels, Websites, and Domains
+
+I first ensured that all of the funnels, website pages and domains were SSL enabled in order to prevent web-facing vulnerabilities. Upon looking up the SSL status, the domain for the business did have an up to date SSL certificate:
+
+![image](https://github.com/user-attachments/assets/a1cab15d-65b0-4a6e-b12a-61f6e7a9d0a0)
+
+In addition, I went through all  42 of their funnels and identified any funnels that were no longer needed. The intent was to find any live funnels (and their forms, assets, etc.) that could potentially be exploited by bad actors. In the end, with the help of management, 24 funnels were identified as unnecessary and were deleted:
+
+![image](https://github.com/user-attachments/assets/af459e21-a6f9-4294-a9d0-188c7f091863)
+
+I did the same with all of their website's main public-facing pages and found none that needed to be deleted or altered.
+
+📜 Backup and Recovery Plan
+
+Due to the fact that the business is built on a third party SaaS platform, and that almost all of their critical digital assets are stored within it, it was imperative to implement a backup and recovery plan in the event of service shortages (which have happened in the past). The plan revolved on the following tasks:
+- Exporting a list of contacts, leads, funnels, ad and email campaigns, transactions, audit logs, and other sensitive data on a monthly basis.
+- Store this data in an encrypted cloud storage solution with 2FA (Dropbox Business in this case)
+- Document the manual backup process as an SOP within the company's Tettra database for the operations manager.
 
 ---
 
@@ -115,11 +133,48 @@ This control focuses on applying secure-by-default configurations within the GoH
 
 This control focuses on implementing individual user accounts, enforce least-privilege access, and conduct regular reviews to remove inactive or unnecessary users. These are the steps I took to implement this control:
 
+👥 User and Role Configuration
+
+The first thing I reviewed was the actual User roles and permissions for all accounts in the GoHighLevel/Elite360 platform to implement the principle of "least priveledge" access. Upon pulling up the roster of accounts I found the following accounts and permissions (details redacted for privacy):
+
+![image](https://github.com/user-attachments/assets/4627d863-7199-4668-bd06-c1f11b8af2d7)
+ 
+In total, there were 6 accounts with the following user types:
+- Owner as Admin
+- Operations Manager as Admin
+- Client Success Manager as User
+- Marketing Team as Admin
+- Sales Team as Admin
+- Virtual assistant as User
+
+Right off the bat, there were simply too many accounts with full "Admin" privileges, many of which did not need such a deep level of permission and access to perform their job duties. Upon reviewing this information with the owner of the business, it was decided that the user permissions/role should be changed as follows:
+- Owner as Admin
+- Operations Manager as Admin
+- Client Success Manager as User
+- Marketing Team as User
+- Sales Team as User
+- Virtual assistant was to  be DELETED since they no longer contracted with them
+
+In addition, more granular permission controls where implemented for each account to further enforce "least priviledge" access. For example, the "Sales Team" Account permissions where limited to only have access to the following platform features: 
+- Calendars
+- Contacts
+- Conversations
+- Opportunities
+- Payments (limited)
+- Media
+- Dashboard (limited)
+
+![image](https://github.com/user-attachments/assets/c8e9895a-690d-4df1-9af3-4e8f712a068c)
+![image](https://github.com/user-attachments/assets/7578bffa-e1cd-489f-9a85-452d90f13620)
+
 ---
 
 ### 🪪 CIS Control 8: Audit Log Management
 
 This controls focuses on exporting and reviewing available activity logs to track account changes, user access, and lead/customer data movement across the platform. These are the steps I took to implement this control:
+
+
+
 
 ---
 
