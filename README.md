@@ -23,7 +23,6 @@ This project contains anonymized configurations and data for demonstration purpo
 - [CIS Control 4: Secure Configuration of Enterprise Assets and Software](#step-3-policy-finalization-and-senior-leadership-sign-off)
 - [CIS Control 5: Account Management](#step-4-mock-meeting-initial-scan-permission-server-team)
 - [CIS Control 8: Audit Log Management](#step-5-initial-scan-of-server-team-assets)
-- [CIS Control 10: Malware Defenses](#step-6-vulnerability-assessment-and-prioritization)
 - [CIS Control 14: Security Awareness and Skills Training](#step-7-distributing-remediations-to-remediation-teams)
 
 ---
@@ -183,16 +182,10 @@ These logs provided a record of actions that each user account has made in the p
 
 ---
 
-### 🛡️ CIS Control 10: Malware Defenses
-
-This control focuses on training staff to recognize suspicious messages or uploads and ensure only vetted files and assets are shared or received via the GoHighLevel-Elite360 platform. These are the steps I took to implement this control:
-
-
----
-
 ### 👀 CIS Control 14: Security Awareness and Skills Training
 
-This control focuses on educating the team members on secure CRM usage, PII handling, phishing recognition, and enforce security policies for account and communication hygiene. For this control, I created a training manual on best security practices that team members can study and reference:
+This control focuses on educating the team members on secure CRM usage, PII handling, phishing recognition, recognizing suspicious file uploads and enforcing security policies for account and communication hygiene. For this control, I created a training manual on best security practices that team members can study and reference:
+
 
 
 ---
