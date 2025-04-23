@@ -142,8 +142,8 @@ In total, there were 6 accounts with the following user types:
 - Owner as Admin
 - Operations Manager as Admin
 - Client Success Manager as User
-- Marketing Team as Admin
-- Sales Team as Admin
+- Marketing Team as Admin (single user)
+- Sales Team as Admin (single user)
 - Virtual assistant as User
 
 Right off the bat, there were simply too many accounts with full "Admin" privileges, many of which did not need such a deep level of permission and access to perform their job duties. Upon reviewing this information with the owner of the business, it was decided that the user permissions/role should be changed as follows:
