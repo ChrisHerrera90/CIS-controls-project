@@ -184,7 +184,9 @@ These logs provided a record of actions that each user account has made in the p
 
 ### 👀 CIS Control 14: Security Awareness and Skills Training
 
-This control focuses on educating the team members on secure CRM usage, PII handling, phishing recognition, recognizing suspicious file uploads and enforcing security policies for account and communication hygiene. For this control, I created a training manual on best security practices that team members can study and reference:
+This control focuses on educating the team members on secure CRM usage, PII handling, phishing recognition, recognizing suspicious file uploads and enforcing security policies for account and communication hygiene. For this control, I created a "Security Awareness Cheat Sheet" that will accompany a formal staff security awareness training program:
+
+https://docs.google.com/document/d/1U_tRtP8UHE78mXSD-BfcWJ8aJAvzb09z8dENtcS9Zvo/edit?usp=sharing
 
 
 
